@@ -1,17 +1,22 @@
-# Summary
+# Table of contents
 
-## 🌟 TỔNG QUAN
-- [Giới thiệu](README.md)
-- [Cài đặt](getting-started/installation.md)
-- [Ví dụ](getting-started/examples.md)
-  
-## 🔐 XÁC THỰC
-- [n8n API](credentials/n8nzaloapi.md)
-- [Zalo User API](credentials/zaloapi.md)
-- [Zalo Bot API](credentials/zalobotapi.md)
-- [Facebook User API](credentials/facebookuserapi.md)
+* [Giới thiệu](README.md)
 
-## 🧩 DANH SÁCH NÚT
+## 🚀 Bắt đầu
+
+* [Hướng dẫn](getting-started/README.md)
+* [Cài đặt](getting-started/installation.md)
+* [Cấu hình nhanh](getting-started/quick-setup.md)
+* [Ví dụ](getting-started/examples.md)
+
+## 🔐 Đăng nhập
+
+* [n8n API](credentials/n8nzaloapi.md)
+* [Zalo User API](credentials/zaloapi.md)
+* [Zalo Bot API](credentials/zalobotapi.md)
+* [Facebook User API](credentials/facebookuserapi.md)
+
+## 🧩 Các nút
 - [Zalo User](zalo/README.md)
   - [Trigger](zalo/trigger.md)
   - [Login](zalo/api/auth/README.md)
