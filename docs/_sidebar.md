@@ -1,17 +1,16 @@
-# Summary
 
-## 🌟 TỔNG QUAN
+- **🌟 TỔNG QUAN**
 - [Giới thiệu](README.md)
 - [Cài đặt](getting-started/installation.md)
 - [Ví dụ](getting-started/examples.md)
-  
-## 🔐 XÁC THỰC
+
+- **🔐 XÁC THỰC**
 - [n8n API](credentials/n8nzaloapi.md)
 - [Zalo User API](credentials/zaloapi.md)
 - [Zalo Bot API](credentials/zalobotapi.md)
 - [Facebook User API](credentials/facebookuserapi.md)
 
-## 🧩 DANH SÁCH NÚT
+- **🧩 DANH SÁCH NÚT**
 - [Zalo User](zalo/README.md)
   - [Trigger](zalo/trigger.md)
   - [Login](zalo/api/auth/README.md)
