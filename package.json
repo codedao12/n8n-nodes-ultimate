@@ -1,0 +1,99 @@
+{
+  "name": "n8n-nodes-ultimate",
+  "version": "2.0.6",
+  "description": "An all-in-one n8n community node pack: Personal Zalo integration (~100 actions), Personal Facebook/Messenger automation, TikTok/Shorts/Reels video downloading, Zalo Bot API, and unified chatbot message aggregation.",
+  "keywords": [
+    "n8n",
+    "n8n-node",
+    "n8n-community-node",
+    "n8n-automation",
+    "workflow-automation",
+    "zalo",
+    "zalo-api",
+    "zalo-user",
+    "zalo-bot",
+    "zalo-bot-api",
+    "automation-zalo",
+    "facebook",
+    "facebook-messenger",
+    "messenger-user",
+    "n8n-nodes-facebook",
+    "n8n-nodes-messenger",
+    "chatbot",
+    "chatbot-automation",
+    "message-aggregation",
+    "message-debounce",
+    "video-downloader",
+    "download-tiktok",
+    "download-youtube",
+    "download-instagram-reels",
+    "expression-credential",
+    "social-automation",
+    "codedao12"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/codedao12/n8n-nodes-ultimate#readme",
+  "author": {
+    "name": "codedao12",
+    "email": "codedao12@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codedao12/n8n-nodes-ultimate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/codedao12/n8n-nodes-ultimate/issues"
+  },
+  "engines": {
+    "node": ">=18.10",
+    "pnpm": ">=9.1"
+  },
+  "files": [
+    "dist/nodes/**/**/*.node.js",
+    "dist/nodes/**/*.node.js",
+    "dist/nodes/utils/helper.cache.js",
+    "dist/credentials/*.credentials.js",
+    "dist/assets/**",
+    "README.md",
+    "LICENSE.md"
+  ],
+  "main": "index.js",
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/N8nZaloApi.credentials.js",
+      "dist/credentials/ZaloApi.credentials.js",
+      "dist/credentials/ZaloBotApi.credentials.js",
+      "dist/credentials/FacebookUserApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/ZaloUser/Zalo.node.js",
+      "dist/nodes/ZaloUser/ZaloTrigger.node.js",
+      "dist/nodes/ZaloBot/ZaloBot.node.js",
+      "dist/nodes/ZaloBot/ZaloBotTrigger.node.js",
+      "dist/nodes/FacebookUser/FacebookUser.node.js",
+      "dist/nodes/FacebookUser/FacebookUserTrigger.node.js",
+      "dist/nodes/MessageDebouncer/MessageDebouncer.node.js",
+      "dist/nodes/DownloadVideos/DownloadVideos.node.js"
+    ]
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "form-data": "^4.0.5",
+    "https-proxy-agent": "^7.0.5",
+    "image-size": "^1.1.1",
+    "node-fetch": "^3.3.2",
+    "sql.js": "^1.10.3",
+    "zca-js": "^2.0.4",
+    "ws3-fca": "^3.5.2",
+    "yt-dlp-wrap": "^2.3.12"
+  },
+  "scripts": {
+    "start": "n8n start",
+    "dev": "nodemon --watch nodes --exec \"n8n start --tunnel\""
+  },
+  "devDependencies": {
+    "esbuild": "^0.27.2",
+    "javascript-obfuscator": "^5.1.0"
+  }
+}

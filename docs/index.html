@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>n8n-nodes-ultimate Docs</title>
+    <meta name="description" content="Tài liệu n8n-nodes-ultimate" />
+    <link rel="icon" href="data:," />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"
+    />
+    <style>
+      :root {
+        --theme-color: #1c53b8;
+      }
+      .sidebar .app-name-link {
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">Đang tải tài liệu...</div>
+    <script>
+      window.$docsify = {
+        name: "n8n-nodes-ultimate",
+        repo: "https://github.com/codedao12/n8n-nodes-ultimate-docs",
+        homepage: "README.md",
+        loadSidebar: true,
+        alias: {
+          "/.*/_sidebar.md": "/SUMMARY.md",
+        },
+        subMaxLevel: 3,
+        maxLevel: 2,
+        auto2top: true,
+        search: "auto",
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  </body>
+</html>
