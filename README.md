@@ -1,31 +1,47 @@
-# n8n-nodes-ultimate
+<div align="center">
+<h1><b>n8n-nodes-ultimate</b></h1>
+  <p>
+    <a href="https://www.npmjs.com/package/n8n-nodes-ultimate" title="total downloads">
+      <img src="https://img.shields.io/npm/dt/n8n-nodes-ultimate?style=for-the-badge&color=d67104" alt="total downloads badge">
+    </a>
+    <a href="https://www.npmjs.com/package/n8n-nodes-ultimate" title="total downloads">
+      <img src="https://img.shields.io/npm/v/n8n-nodes-ultimate?style=for-the-badge&color=1c53b8" alt="total downloads badge">
+    </a>
+  </p>
+  <p>
+    <a href="https://www.npmjs.com/package/n8n-nodes-ultimate" title="npm">
+      <img src="https://nodei.co/npm/n8n-nodes-ultimate.png?downloads=true&downloadRank=true&stars=true&data=d,s&color=red" alt="npm badge">
+    </a>
+  </p>
+</div>
 
-![npm version](https://img.shields.io/npm/v/n8n-nodes-ultimate?style=for-the-badge&color=1c53b8)&nbsp; ![npm downloads](https://img.shields.io/npm/dt/n8n-nodes-ultimate?style=for-the-badge&color=d67104)
 
 **Bộ node n8n đa năng**: `Zalo User` (~100 tính năng), `Zalo Bot` API, `Facebook User`, `Tải Video` mạng xã hội, và `Gôm tin nhắn` cho chatbot.
 
 ## 📌 Menu
-- [Giới thiệu](#-giới-thiệu)
-- [Hướng dẫn cài đặt](#-hướng-dẫn-cài-đặt)
-- [Tổng quan nodes](#-các-nút-hiện-có)
-  - [Zalo User](#-hướng-dẫn-zalo-user) • [~100 tính năng](#-tính-năng-của-zalo-user)
-  - [Zalo Bot Platform](#-hướng-dẫn-zalo-bot)
-  - [Facebook User](#-hướng-dẫn-facebook-user) _(mess + notif)_
-  - [Download Social Videos](#-hướng-dẫn-download-social-videos)
-  - [Message Debounce](#-hướng-dẫn-message-debounce)
-- [Lưu ý quan trọng](#-lưu-ý-quan-trọng)
+- [Giới thiệu](#-giới-thiệu)  
+- [Hướng dẫn cài đặt](#-hướng-dẫn-cài-đặt)  
+- [Tổng quan 5 nút](#-các-nút-hiện-có)  
+  - [Zalo User](#-hướng-dẫn-zalo-user) • [~100 tính năng](#-tính-năng-của-zalo-user)  
+  - [Zalo Bot Platform](#-hướng-dẫn-zalo-bot)  
+  - [Facebook User](#-hướng-dẫn-facebook-user) _⚡Mess & Notif_  
+  - [Download Social Videos](#-hướng-dẫn-download-social-videos)  
+  - [Message Debounce](#-hướng-dẫn-message-debounce)  
+- [Lưu ý quan trọng](#-lưu-ý-quan-trọng)  
 - [License](#-license)  
 
 ## 👤 Tác Giả
-
 **Github:** [codedao12](https://github.com/codedao12)  
 **Video hướng dẫn:** [youtube](https://youtu.be/DPcGiIKUm1Q)  
 **Hỗ trợ và cập nhật:** [nhóm Zalo](https://zalo.me/g/uinmin927)
 
+## 📖 Tài Liệu
+[Xem hướng dẫn đầy đủ tại Documentation](https://codedao12.gitbook.io/n8n-nodes-ultimate/)
+
 <br>
 
 ## 📋 Giới Thiệu
-Sau khi cài đặt tìm `codedao12` sẽ thấy các nút:
+Sau khi cài đặt tìm `codedao12` để sử dụng:
 1. **Zalo User**: Tự động hoá Zalo cá nhân (trigger, ~100 action).
 2. **Zalo Bot**: Kết nối API chính thống.
 3. **Facebook User**: Tự động hoá Facebook cá nhân (trigger, ~50 action).
@@ -87,15 +103,15 @@ Sau khi cài đặt tìm `codedao12` sẽ thấy các nút:
 
 1.  Mở **n8n Editor**.
 2.  Đi đến **Settings → Community Nodes**.
-3.  Chọn **Install** và tìm kiếm `n8n-nodes-ultimate`.
-4.  Nhấn nút **Install** để cài đặt.
-5.  Tìm kiếm `codedao12` trong danh sách node để sử dụng.
+3.  Chọn **Install** và nhập `n8n-nodes-ultimate`.
+4.  Nhấn **Install** để cài đặt.
+5.  Tìm `codedao12` trong danh sách node.
 
 ---
 
 ### 2. Cài thủ công
 
-Nếu bạn đang tự host n8n, bạn có thể cài đặt bộ node này qua `npm`:
+Nếu bạn đang tự host n8n, có thể cài đặt qua `npm`:
 
 ```bash
 cd YOUR_N8N_DIRECTORY
@@ -174,21 +190,21 @@ npm install n8n-nodes-ultimate
 
 ### Bước 1: Tạo n8n API Credential
 
-Node Zalo `Login Account` By QR cần quyền truy cập API vào n8n instance của bạn để có thể **tự động tạo ra Zalo Credential** sau khi bạn đăng nhập thành công.
+Node Zalo `Login Account` By QR cần n8n API key để **lưu Zalo Credential** sau khi bạn đăng nhập thành công.
 
 <details>
 <summary><b>Nội dung chi tiết</b></summary>
 
 1.  **Lấy API Key của n8n:**
     *   Trong giao diện n8n, đi đến **Settings → API**.
-    *   Nhấn **Add API key** để tạo một API key mới và sao chép nó (đổi tên API Zalo để gợi nhớ).
+    *   Nhấn **Add API key** để tạo một API key mới và sao chép nó.
 
 2.  **Tạo `n8n Zalo API Credential`:**
     *   Trong giao diện n8n, đi đến **Credentials → Add credential**.
     *   Tìm và chọn **n8n Zalo API Credential**.
     *   **API Key**: Dán API key bạn vừa tạo.
     *   **URL**: Nhập URL của n8n instance của bạn (ví dụ: `http://127.0.0.1:5678` hoặc `https://n8n.yourdomain.com`).
-    *   Nhấn **Save**.
+    *   Nhấn **Save** (1 cái này dùng cho nhiều lần login nha).
 </details>
 
 ### Bước 2: Đăng nhập Zalo bằng QR Code
@@ -237,7 +253,7 @@ Khi bạn quản lý nhiều tài khoản Zalo, mỗi tài khoản sẽ có mộ
 
 Node `Facebook User` hỗ trợ thao tác **Messenger cá nhân** (unofficial) với nhiều nhóm chức năng:
 
-- **Trigger**: lắng nghe tin nhắn + thông báo (notifications) qua `Facebook User Trigger` (output riêng cho notification).
+- **Trigger**: lắng nghe tin nhắn + thông báo (chia làm 2 output).
 - **Message**: gửi/thu hồi/sửa/xoá tin nhắn, reaction, forward attachment, đánh dấu đã xem/đã gửi/đã nhận, resolve photo URL.  
 - **Post**: đăng bài trang cá nhân/nhóm, comment bài viết, lấy bài viết page/group/comment, share preview, story (create/react/reply).  
 - **Threads**: lấy info, danh sách hội thoại, lịch sử chat, tạo nhóm, thêm/xoá thành viên, đổi tên/ảnh, set admin.  
@@ -253,7 +269,7 @@ Node `Facebook User` hỗ trợ thao tác **Messenger cá nhân** (unofficial) v
 
 1.  Cài extension **J2TEAM Cookies** trên trình duyệt.
 2.  Mở `facebook.com` của tài khoản đã đăng nhập.
-3.  Mở extension và chọn **Export as text**.
+3.  Bật extension và chọn **Export as text**.
 4.  Copy JSON và dán vào trường **Cookies (JSON)**.
 5.  Lưu lại và thử sử dụng (có thể thêm proxy).
 </details>
@@ -268,7 +284,7 @@ Node `Facebook User` hỗ trợ thao tác **Messenger cá nhân** (unofficial) v
 4.  Nhập `threadId` hoặc các tham số cần thiết và chạy workflow.
 </details>
 
-> Lưu ý: Chat riêng mã hoá đầu cuối có thể không hoạt động. Khuyên dùng tài khoản phụ để thử nghiệm.
+> Lưu ý: Chat riêng bị mã hoá đầu cuối nên không hoạt động (nên dùng acc clone để chạy).
 
 <br>
 
@@ -373,7 +389,7 @@ Node `Message Debounce` giúp gôm tin nhắn theo thời gian chờ:
 - Chúng tôi không chịu trách nhiệm nếu có sự cố xảy ra, hãy cân nhắc trước khi sử dụng.  
 
 **📝 Khuyến nghị:**
-- Dùng tài khoản test, không dùng tài khoản chính.  
+- Hãy sử dụng tài khoản phụ.  
 - Tuân thủ rate limit, không spam.  
 
 <br>
