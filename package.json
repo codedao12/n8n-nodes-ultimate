@@ -1,7 +1,7 @@
 {
   "name": "n8n-nodes-ultimate",
-  "version": "2.0.8",
-  "description": "An all-in-one n8n community node pack: Personal Zalo integration (~100 actions), Personal Facebook/Messenger automation, TikTok/Shorts/Reels video downloading, Zalo Bot API, and message debouncer for chatbot.",
+  "version": "2.1.0",
+  "description": "Ultimate n8n Master Nodes Pack: Personal Zalo integration (~100 actions), Personal Facebook/Messenger automation, TikTok/Shorts/Reels video downloading, Zalo Bot API, and message debouncer for chatbot.",
   "keywords": [
     "n8n",
     "n8n-node",
@@ -72,21 +72,22 @@
       "dist/nodes/ZaloBot/ZaloBot.node.js",
       "dist/nodes/ZaloBot/ZaloBotTrigger.node.js",
       "dist/nodes/FacebookUser/FacebookUser.node.js",
+      "dist/nodes/FacebookBusiness/FacebookBusiness.node.js",
       "dist/nodes/FacebookUser/FacebookUserTrigger.node.js",
       "dist/nodes/MessageDebouncer/MessageDebouncer.node.js",
       "dist/nodes/DownloadVideos/DownloadVideos.node.js"
     ]
   },
   "dependencies": {
-    "zca-js": "^2.0.4",
-    "sql.js": "^1.10.3",
-    "ws3-fca": "^3.5.2",
+    "btch-downloader": "^6.0.25",
     "form-data": "^4.0.5",
+    "https-proxy-agent": "^7.0.5",
     "image-size": "^1.1.1",
     "node-fetch": "^3.3.2",
+    "sql.js": "^1.10.3",
+    "ws3-fca": "^3.5.2",
     "yt-dlp-wrap": "^2.3.12",
-    "btch-downloader": "^6.0.25",
-    "https-proxy-agent": "^7.0.5"
+    "zca-js": "^2.1.1"
   },
   "scripts": {
     "start": "n8n start",

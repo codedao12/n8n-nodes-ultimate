@@ -1,52 +1,53 @@
 <div align="center">
 <h1><b>n8n-nodes-ultimate</b></h1>
   <p>
-    <a href="https://www.npmjs.com/package/n8n-nodes-ultimate" title="total downloads">
-      <img src="https://img.shields.io/npm/dt/n8n-nodes-ultimate?style=for-the-badge&color=d67104" alt="total downloads badge">
-    </a>
-    <a href="https://www.npmjs.com/package/n8n-nodes-ultimate" title="total downloads">
-      <img src="https://img.shields.io/npm/v/n8n-nodes-ultimate?style=for-the-badge&color=1c53b8" alt="total downloads badge">
-    </a>
-  </p>
-  <p>
     <a href="https://www.npmjs.com/package/n8n-nodes-ultimate" title="npm">
       <img src="https://nodei.co/npm/n8n-nodes-ultimate.png?downloads=true&downloadRank=true&stars=true&data=d,s&color=red" alt="npm badge">
     </a>
   </p>
+  <p>
+    <a href="https://www.npmjs.com/package/n8n-nodes-ultimate" title="version badge">
+      <img src="https://img.shields.io/npm/v/n8n-nodes-ultimate?style=for-the-badge&color=1c53b8" alt="version badge">
+    </a>
+    <a href="https://www.npmjs.com/package/n8n-nodes-ultimate" title="total downloads">
+      <img src="https://img.shields.io/npm/dt/n8n-nodes-ultimate?style=for-the-badge&color=d67104" alt="total downloads badge">
+    </a>
+  </p>
 </div>
 
+**Bộ node n8n đa năng**: `Zalo User` (~100 tính năng), `Zalo Bot` API, `Facebook User`, `Facebook Business`, `Tải Video` mạng xã hội, và `Gôm tin nhắn` cho chatbot.
 
-**Bộ node n8n đa năng**: `Zalo User` (~100 tính năng), `Zalo Bot` API, `Facebook User`, `Tải Video` mạng xã hội, và `Gôm tin nhắn` cho chatbot.
-
-## 📌 Menu
+## 📋 Menu
 - [Giới thiệu](#-giới-thiệu)  
+- [Tài liệu đầy đủ](#-tài-liệu)  
 - [Hướng dẫn cài đặt](#-hướng-dẫn-cài-đặt)  
-- [Tổng quan 5 nút](#-các-nút-hiện-có)  
+- [Tổng quan 6 nút](#-các-nút-hiện-có)  
   - [Zalo User](#-hướng-dẫn-zalo-user) • [~100 tính năng](#-tính-năng-của-zalo-user)  
   - [Zalo Bot Platform](#-hướng-dẫn-zalo-bot)  
   - [Facebook User](#-hướng-dẫn-facebook-user) _⚡Mess & Notif_  
+  - [Facebook Business](#-hướng-dẫn-facebook-business)  
   - [Download Social Videos](#-hướng-dẫn-download-social-videos)  
   - [Message Debounce](#-hướng-dẫn-message-debounce)  
+- [Cập nhật gần đây](#-cập-nhật-gần-đây)  
 - [Lưu ý quan trọng](#-lưu-ý-quan-trọng)  
 - [License](#-license)  
 
 ## 👤 Tác Giả
-**Github:** [codedao12](https://github.com/codedao12)  
-**Video hướng dẫn:** [youtube](https://youtu.be/DPcGiIKUm1Q)  
-**Hỗ trợ và cập nhật:** [nhóm Zalo](https://zalo.me/g/uinmin927)
+**Github:** [Codedao12](https://github.com/codedao12)  
+**Video hướng dẫn:** [Youtube](https://www.youtube.com/@codedao12)  
+**Hỗ trợ & cập nhật:** [Nhóm Zalo](https://zalo.me/g/uinmin927)
 
 ## 📖 Tài Liệu
-[Xem hướng dẫn đầy đủ tại Documentation](https://codedao12.gitbook.io/n8n-nodes-ultimate/)
-
-<br>
+[Xem hướng dẫn đầy đủ tại Document](https://codedao12.gitbook.io/n8n-nodes-ultimate/)
 
 ## 📋 Giới Thiệu
 Sau khi cài đặt tìm `codedao12` để sử dụng:
-1. **Zalo User**: Tự động hoá Zalo cá nhân (trigger, ~100 action).
+1. **[Zalo User](https://youtu.be/QaZLVxSRlQ0)**: Tự động hoá Zalo cá nhân (trigger, ~100 action).
 2. **Zalo Bot**: Kết nối API chính thống.
 3. **Facebook User**: Tự động hoá Facebook cá nhân (trigger, ~50 action).
-4. **Download Social Videos**: Tải Video/Kênh từ Youtube/TikTok/Reels.
-5. **Message Debounce**: Gôm tin nhắn, tối ưu trải nghiệm chatbot.
+4. **Facebook Business**: Quản lý Page/Group (unofficial), đăng bài/quét bài/comment, sync page token.
+5. **Download Social Videos**: Tải Video/Kênh từ Youtube/TikTok/Reels.
+6. **Message Debounce**: Gôm tin nhắn, tối ưu trải nghiệm chatbot.
 
 <details>
 <summary><b>Xem chi tiết từng nhóm node</b></summary>
@@ -69,8 +70,14 @@ Sau khi cài đặt tìm `codedao12` để sử dụng:
 - **Hơn 50** tính năng tự động hoá tài khoản Facebook cá nhân (unofficial).  
 - Trigger lắng nghe tin nhắn messenger cá nhân.  
 - Trigger lắng nghe thông báo mới đến tài khoản với output riêng.  
-- Đăng bài trang cá nhân, nhóm, comment bài viết...
-- Quản lý nhóm chat messenger, story, note...  
+- Nhắn tin, reaction, sticker, forward attachment...  
+- Quản lý thread/group chat messenger, users, story, note...  
+- (Đăng bài Page/Group + media/photo_id đã chuyển qua node `Facebook Business`)  
+
+### <u>Facebook Business</u>  
+- Quản lý Page/Group bằng cookies business (unofficial) qua Graph API.  
+- Sync danh sách page đang quản lý và lưu token page cục bộ (mã hoá đơn giản).  
+- Đăng bài group/page (text + ảnh), lấy bài viết theo thời gian, lấy/đăng comment, upload media lấy photo_id.  
 
 ### <u>Download Social Videos</u>  
 - Tải video từ **Shorts / TikTok / Reels**.  
@@ -89,7 +96,8 @@ Sau khi cài đặt tìm `codedao12` để sử dụng:
 |:-------------------------|:--------------------------------------------------|:------------------------------------------------------------------|
 | `Zalo User`                | Đăng nhập QR, trigger, gửi tin, quản lý user/nhóm | Unofficial Api, **Expression Credential**, update Credential                 |
 | `Zalo Bot`                 | Webhook, gửi tin, quản lý Bot                     | API chính thống                                                   |
-| `Facebook User`            | Trigger, Nhắn tin, Đăng bài                      | Unofficial Api, sử dụng cookies đăng nhập tài khoản cá nhân                      |
+| `Facebook User`            | Trigger, Messenger, Threads                      | Unofficial Api, sử dụng cookies đăng nhập tài khoản cá nhân                      |
+| `Facebook Business`        | Quản lý Page/Group, đăng bài, quét bài, comment  | Unofficial Api, sử dụng cookies business + sync page tokens                  |
 | `Download Social Videos`   | Tải video đa nền tảng                             | Tải TikTok/Shorts/Reels theo url hoặc Kênh |
 | `Message Debounce`         | Gôm tin nhắn theo thời gian                       | Chờ gôm tin nhắn chat từ mọi trigger                    |
 
@@ -255,23 +263,23 @@ Node `Facebook User` hỗ trợ thao tác **Messenger cá nhân** (unofficial) v
 
 - **Trigger**: lắng nghe tin nhắn + thông báo (chia làm 2 output).
 - **Message**: gửi/thu hồi/sửa/xoá tin nhắn, reaction, forward attachment, đánh dấu đã xem/đã gửi/đã nhận, resolve photo URL.  
-- **Post**: đăng bài trang cá nhân/nhóm, comment bài viết, lấy bài viết page/group/comment, share preview, story (create/react/reply).  
 - **Threads**: lấy info, danh sách hội thoại, lịch sử chat, tạo nhóm, thêm/xoá thành viên, đổi tên/ảnh, set admin.  
 - **Users**: lấy thông tin người dùng, resolve name/link -> userId, follow/unfollow, friend requests/list/suggestions.  
-- **Groups/Pages**: lấy danh sách bài viết và bình luận.  
 - **Notes**: tạo/xoá/kiểm tra ghi chú chat.  
+- **Story**: tạo/thả cảm xúc/trả lời story.  
 - **Stickers**: tìm sticker, list pack, store pack, add pack, sticker AI.  
-- **Media**: upload ảnh để lấy Photo ID.  
+  
+> Lưu ý: Các tính năng đăng bài Page/Group, comment và media/photo_id đã chuyển qua node `Facebook Business`.
 
 ### Bước 1: Tạo Facebook User Credential
 <details>
 <summary><b>Nội dung chi tiết</b></summary>
 
-1.  Cài extension **J2TEAM Cookies** trên trình duyệt.
-2.  Mở `facebook.com` của tài khoản đã đăng nhập.
-3.  Bật extension và chọn **Export as text**.
-4.  Copy JSON và dán vào trường **Cookies (JSON)**.
-5.  Lưu lại và thử sử dụng (có thể thêm proxy).
+1.  Cài extension **Local Cookies Manager (Codedao12)** trên Chrome.
+2.  Mở `https://web.facebook.com` của tài khoản đã đăng nhập.
+3.  Bật extension (khuyến nghị bật `User Agent`) và chọn **Export Text**.
+4.  Dán nội dung export vào trường **Cookies User** trong `Facebook User API Credential`.
+5.  Nếu cần thao tác Page/Group bằng `Facebook Business`: mở `https://business.facebook.com` → bật **Advanced export** → đặt **Password** → **Export Text** → dán vào **Cookies Business** và nhập Password đó vào **Password for Cookies business.fb**.
 </details>
 
 ### Bước 2: Sử dụng node Facebook User
@@ -285,6 +293,46 @@ Node `Facebook User` hỗ trợ thao tác **Messenger cá nhân** (unofficial) v
 </details>
 
 > Lưu ý: Chat riêng bị mã hoá đầu cuối nên không hoạt động (nên dùng acc clone để chạy).
+
+<br>
+
+## 💡 Hướng Dẫn `Facebook Business`
+
+Node `Facebook Business` tập trung thao tác **Page/Group** (unofficial) bằng cookies business và Graph API:
+
+- **Group**: đăng bài nhóm (text/ảnh), lấy info nhóm, quét bài viết.
+- **Page**: sync danh sách page đang quản lý, lấy page token, đăng bài, quét bài viết.
+- **Comment**: lấy/đăng comment theo `postId`.
+- **Media**: upload URL để lấy `photo_id` (dùng để đính kèm ảnh).
+
+### Bước 1: Chuẩn bị Credential
+<details>
+<summary><b>Nội dung chi tiết</b></summary>
+
+- Dùng chung `Facebook User API Credential`.
+- Bắt buộc có **Cookies Business** + **Password for Cookies business.fb** (lấy từ `business.facebook.com`).
+
+</details>
+
+### Bước 2: Sync Page (nếu thao tác Page)
+<details>
+<summary><b>Nội dung chi tiết</b></summary>
+
+1.  Thêm node `Facebook Business`.
+2.  Chọn **Resource = Page** → **Operation = Sync Managed Pages**.
+3.  Chạy 1 lần để load danh sách page và lưu token cục bộ.
+
+</details>
+
+### Bước 3: Sử dụng các action
+<details>
+<summary><b>Nội dung chi tiết</b></summary>
+
+- **Group/Page → Create Post**: chọn `Attachment = None | Image Urls | Photo IDs`.
+- **Media → Get Photo ID**: upload `Image URL(s)` để lấy `photo_id` trước rồi gắn vào post.
+- **Group/Page → Get Posts**: hỗ trợ `Limit`, `Hours Back`, và phân trang bằng `Paging URL` (nhất là Group).
+
+</details>
 
 <br>
 
@@ -382,10 +430,37 @@ Node `Message Debounce` giúp gôm tin nhắn theo thời gian chờ:
 
 <br>
 
+## 🆕 Cập Nhật Gần Đây
+
+<details>
+<summary><b>v2.1.0 (Zalo User)</b></summary>
+
+- Thêm API `updateProfileBio`, `getFullAvatar`, `getGroupChatHistory`, `getMultiUsersByPhones`, `findUserByUsername`, `getAvatarUrlProfile`, `getStickerCategoryDetail`.
+- Cập nhật lại `searchSticker`.
+- Chuẩn hoá output `getAllGroups` dạng `groupId -> groupId`.
+</details>
+
+<details>
+<summary><b>v2.0.9 (Facebook Business)</b></summary>  
+
+- Thêm node `Facebook Business`.
+- Tính năng sync page token, đăng bài, quét bài, comment, upload media lấy `photo_id`.
+- Xoá các tính năng đăng bài, comment khỏi nút `Facebook User`.
+</details>
+
+<details>
+<summary><b>v2.0.8</b></summary>  
+
+- Giảm size gói cài đặt.
+- Sửa nút `Download Social Videos` để tải tiktok, X tốt hơn.
+- Thêm 1 số action cho `Zalo User` và fix lỗi.
+</details>
+
+<br>
+
 ## ⚠️ Lưu Ý Quan Trọng
 ⚠️ **Cảnh báo**:  
-- `Zalo User` và `Facebook User` là thư viện **không chính thức**, có thể vi phạm chính sách nền tảng và khiến tài khoản bị vô hiệu hoá.  
-- `Download Social Videos` tải Reels cần cookies, hãy cân nhắc rủi ro checkpoint/ban nếu tải nhiều hoặc spam.  
+- `Zalo User`, `Facebook User` và `Facebook Business` là thư viện **không chính thức**, có thể vi phạm chính sách nền tảng và khiến tài khoản bị vô hiệu hoá.  
 - Chúng tôi không chịu trách nhiệm nếu có sự cố xảy ra, hãy cân nhắc trước khi sử dụng.  
 
 **📝 Khuyến nghị:**
@@ -395,7 +470,7 @@ Node `Message Debounce` giúp gôm tin nhắn theo thời gian chờ:
 <br>
 
 ## 🙏 Lời cảm ơn
-This project is inspired by and partially references the following open-source projects: zca-js, ws3-fca, yt-dlp.
+This project is inspired by and partially references the following open-source projects: zca-js, ws3-fca.
 
 <br>
 
